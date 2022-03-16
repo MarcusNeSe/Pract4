@@ -2,6 +2,10 @@ package Entornos.Practica3;
 
 public class Gato extends Mascota
 {
+    @Override
+    public void sonido() {
+        System.out.println("Miau, Miau");
+    }
 
     //Atributs
     private String raza = new String();

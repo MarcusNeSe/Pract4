@@ -2,7 +2,11 @@ package Entornos.Practica3;
 
 public class Perro extends Mascota
 {
-    
+    @Override
+    public void sonido() {
+        System.out.println("Guau, Guau");
+    }
+
     //Atributs
     private String raza = new String();
 
