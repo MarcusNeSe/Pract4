@@ -1,13 +1,7 @@
 package Entornos.Practica3;
 
-public abstract class Mascota implements Sonido
+public abstract class Mascota
 {   
-    //
-    @Override
-    public void sonido() {
-
-    }
-
     //Atributs
     private String nombre = new String();
     private int edad;

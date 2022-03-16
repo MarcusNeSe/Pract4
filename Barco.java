@@ -3,13 +3,8 @@ package Entornos.Practica3;
 import java.util.Scanner;
 //import java.util.*;
 
-public class Barco implements Sonido
+public class Barco
 {
-    @Override
-    public void sonido() {
-        
-    }
-
     //Atributs
     private String Nombre = new String();
     private int numCamarotes;
