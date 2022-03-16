@@ -3,8 +3,13 @@ package Entornos.Practica3;
 import java.util.Scanner;
 //import java.util.*;
 
-public class Barco
+public class Barco implements NuevaInterfaz
 {
+    @Override
+    public void sonido() {
+        System.out.println("Brrr, Brrr");
+    }
+    
     //Atributs
     private String Nombre = new String();
     private int numCamarotes;

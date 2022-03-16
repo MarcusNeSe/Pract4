@@ -1,6 +1,6 @@
 package Entornos.Practica3;
 
-public abstract class Mascota
+public abstract class Mascota implements NuevaInterfaz
 {   
     //Atributs
     private String nombre = new String();
