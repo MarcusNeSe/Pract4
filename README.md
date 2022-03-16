@@ -2,13 +2,13 @@
 
 - Creando copia practica 3, nueva rama "master", tag y subiendolo todo:
 
-    + Para hacer esto hemos tenido que usar primero un `"git init"` (desde git, estando dentro de la carpeta en la cual están todos los archivos .java). Luego hemos hecho un `"git add ."`, para mover todos los archivos al área de ensayo, una vez metido todo, hemos usado el comando `"git commit -m "First version"`. 
+    + Para hacer esto hemos tenido que usar primero un `"git init"` (desde git, estando dentro de la carpeta en la cual están todos los archivos .java). Luego hemos hecho un           `"git add ."`, para mover todos los archivos al área de ensayo, una vez metido todo, hemos usado el comando `"git commit -m "First version"`. 
 
-    + Un vez hecho, crearemos la rama master con `"git branch master"`, luego nos posicionaremos en esa rama con `"git checkout master"` y luego subiremos el primer commit a GitHub con `"git remote add origin URLdeTuProyectoEnGithub"` y seguido de un `"git push origin master"`. 
+    + Un vez hecho, crearemos la rama master con `"git branch master"`, luego nos posicionaremos en esa rama con `"git checkout master"` y luego subiremos el primer commit a           GitHub con `"git remote add origin URLdeTuProyectoEnGithub"` y seguido de un `"git push origin master"`. 
 
     + Ahora crearemos el tag "v1.0.0" y lo pondremos todo dentro.
 
-    + Para esto deberemos de saber primero el código del commit pondremos `"git log --oneline` y ahora como sabremos el código del commit usaremos `"git tag -a v1.0.0 -m "Versión completa" código (ej: e6D9924)"`.
+    + Para esto deberemos de saber primero el código del commit pondremos `"git log --oneline` y ahora como sabremos el código del commit usaremos `"git tag -a v1.0.0 -m               "Versión completa" código (ej: e6D9924)"`.
 
     + El tag "v1.0.0" está creado y dentro de el estará todo el código. Ahora hay que subirlo con el comando `"git push origin v1.0.0"`.
 
@@ -34,4 +34,6 @@
 
     + Nos moveremos a la rama develo con `"git checkout develop"`.
     
-    + Una vez estando en la rama "develop", crearemos la nueva interfaz, la hemos llamado "NuevaInterfaz.java".
+    + Una vez estando en la rama "develop", crearemos la nueva interfaz, la hemos llamado "NuevaInterfaz.java". Y crearemos el commit con primero `"git add ."`, luego un `"git         commit -m "Nueva Interfaz""` y lo subiremos con `"git push origin develop"`.
+    
+    + Esto lo meteremos el un tag "v2.1.0", para eso miraremos el código con `"git log --oneline"` y creaemos el tag y lo subiremos con `"git tag -a v2.1.0 -m "Nombre" código"`       y `"git push origin v2.1.0"`.
