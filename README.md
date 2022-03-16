@@ -46,16 +46,28 @@ Ahora crearemos el tag "v2.2.0" y lo subimos, primero hay que saber el código d
 ___
 - Subiendo la "v2.2.0" a la rama "master" como "v3.0.0":
 ___
-
+Para poder crear la "v3.0.0" subiremos a la rama "master" con `"git checkout master"`, desde aquí crearemos el tag "v3.0.0" con `"git tag -a v3.0.0 -m "Nombre" código"` y lo subiremos con `"git push origin v3.0.0"`.
 ___
 - Crear rama "develop2" y creando "v3.1.0":
 ___
 Lo primero que hacemos es desde la rama "master" usar el comando `"git branch develop2"`, así crearemos la rama "develop2".
 
-Ahora haremos un `"git merge develop2"` así estarán fusionadas. Nos moveremos a la rama con `"git checkout develop2"`.
+Ahora haremos un `"git merge develop2"` así estarán fusionadas. Y nos moveremos a la rama con `"git checkout develop2"`.
 
 Editaremos las clases que tienen implementadas la interfaz sonido y mejoraremos el sonido que hace el barco, gato y perro.
 
 Luego haremos un `"git add ."` seguido de un commit `"git commit -m "Cambio Sonido""` y lo subiremos con `"git push origin develop2"`.
 
 Para crear el tag "v3.1.0", primero buscamos el código del último commit creado con `"git log --oneline"`, ahora crearemos el nuevo tag con `"git tag -a v3.1.0 -m "Nombre" código"` y lo subiremos con `"git push origin v3.1.0"`.
+___
+- Crear "v3.2.0" y la subimos:
+___
+Para esta versión hemos editado los package de la versión de "package Entornos.Practica3" a "package Entornos.Practica4". Lo cambiamos porque sino no nos funcionaba el programa.
+
+Una vez cambiado haremos el commit `"git add ."`, `"git commit -m "Cambio package""` y se sube con el comando `"git push origin develop2"`.
+
+Luego crearemos el tag "v3.2.0" pero primero miraremo el código del anterior commit `"git log --oneline"`, una vez lo tengamos usamos `"git tag -a v3.2.0 -m "Nombre" código"` y lo subimos con `"git push origin v3.2.0"`.
+___
+- Nos movemos a la rama "master" y creamos el tag "v4.0.0":
+___
+Para poder crear la "v4.0.0" subiremos a la rama "master" con `"git checkout master"`, desde aquí crearemos el tag "v4.0.0" con `"git tag -a v4.0.0 -m "Nombre" código"` y lo subiremos con `"git push origin v4.0.0"`.
