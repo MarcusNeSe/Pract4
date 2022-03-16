@@ -1,4 +1,4 @@
-package Entornos.Practica 4;
+package Entornos.Practica4;
 
 interface NuevaInterfaz {
     public abstract void sonido() {

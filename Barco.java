@@ -1,4 +1,4 @@
-package Entornos.Practica3;
+package Entornos.Practica4;
 
 import java.util.Scanner;
 //import java.util.*;

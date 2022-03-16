@@ -1,4 +1,4 @@
-package Entornos.Practica3;
+package Entornos.Practica4;
 public class Juguete {
     //Atributos
     private String nombre = new String();
