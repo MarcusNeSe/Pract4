@@ -18,6 +18,20 @@
     
     + Una vez quitado haremos un nuevo commit con `"git add ."`, luego `"git commit -m "Descripción que queramos"` y lo subiremos `"git push origin master"`.
     
-    + Ahora crearemos el tag "v2.0.0", primero usamos el comando `"git log --oneline"` cogeremos el código del nuevo commit y pondremos `"git tag -a v2.0.0 -m "Nombre" código"`
+    + Ahora crearemos el tag "v2.0.0", primero usamos el comando `"git log --oneline"` cogeremos el código del nuevo commit y pondremos `"git tag -a v2.0.0 -m "Nombre" código"`.
 
-- Luego hemos creado la rama "develop", y luego desde la rama "master" hemos hecho un 
+    + Una vez creado lo subiremos con `"git push origin v2.0.0"`.
+
+- Creando nueva rama "develop" y fusionamos:
+    
+    + Para crear la nueva rama usaremos `"git branch develop"`.
+
+    + Ahora como estaremos desde la rama master haremos una fusion usando el comando `"git merge develop"`.
+    
+    + Hay que subir la rama a git con `"git push origin develop"`.
+
+- Moviendonos a la rama develop, creamos v2.1.0 y subimos.
+
+    + Nos moveremos a la rama develo con `"git checkout develop"`.
+    
+    + Una vez estando en la rama "develop", crearemos la nueva interfaz, la hemos llamado "NuevaInterfaz.java".
