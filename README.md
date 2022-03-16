@@ -32,7 +32,7 @@ Hay que subir la rama a git con `"git push origin develop"`.
 ___
 - Moviendonos a la rama develop, creamos "v2.1.0" y subimos:
 ___
-Nos moveremos a la rama develo con `"git checkout develop"`.
+Nos moveremos a la rama develop con `"git checkout develop"`.
     
 Una vez estando en la rama "develop", crearemos la nueva interfaz, la hemos llamado "NuevaInterfaz.java". Y crearemos el commit con primero `"git add ."`, luego un `"git         commit -m "Nueva Interfaz""` y lo subiremos con `"git push origin develop"`.
     
@@ -40,7 +40,7 @@ Esto lo meteremos el un tag "v2.1.0", para eso miraremos el código con `"git lo
 ___
 - Implementando la interfaz, creamos "v2.2.0":
 ___
-Editamos las clases implementando la interfaz, ahora las subiremos con un nuevo commit para eso usamos los siguientes comando `"git add .`", `"git commit -m "Interfaz           Implementada" y para subir `"git push origin develop"`.
+Editamos las clases implementando la interfaz, ahora las subiremos con un nuevo commit para eso usamos los siguientes comando `"git add .`", `"git commit -m "Interfaz           Implementada""` y para subir `"git push origin develop"`.
     
 Ahora crearemos el tag "v2.2.0" y lo subimos, primero hay que saber el código del commit con `"git log --oneline"`, luego para crear el tag usaremos `"git tag -a v2.2.0 -m       "Nombre" código"` y lo subiremos con `"git push origin v2.2.0"`.
 ___
@@ -50,4 +50,12 @@ ___
 ___
 - Crear rama "develop2" y creando "v3.1.0":
 ___
-Lo primero quu hacemos es desde la rama "master" usar el comando `"git branch develop2"2, así crearemos la rama "develop2".
+Lo primero que hacemos es desde la rama "master" usar el comando `"git branch develop2"`, así crearemos la rama "develop2".
+
+Ahora haremos un `"git merge develop2"` así estarán fusionadas. Nos moveremos a la rama con `"git checkout develop2"`.
+
+Editaremos las clases que tienen implementadas la interfaz sonido y mejoraremos el sonido que hace el barco, gato y perro.
+
+Luego haremos un `"git add ."` seguido de un commit `"git commit -m "Cambio Sonido""` y lo subiremos con `"git push origin develop2"`.
+
+Para crear el tag "v3.1.0", primero buscamos el código del último commit creado con `"git log --oneline"`, ahora crearemos el nuevo tag con `"git tag -a v3.1.0 -m "Nombre" código"` y lo subiremos con `"git push origin v3.1.0"`.
